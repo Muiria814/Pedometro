@@ -1,4 +1,4 @@
-const API = "https://pedometro.onrender.com/"; // MUDA ISTO
+const API = "https://backendpedo.onrender.com"; // MUDA ISTO
 
 let steps = 0;
 
