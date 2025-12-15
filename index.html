@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Pedometer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedómetro DOGE</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>🚶 Pedometer</h1>
-        <div class="display">
-            <h2>Today's Steps:</h2>
-            <p id="step-count">0</p>
-        </div>
-
-        <button id="toggle-button">Start Tracking</button>
-
-        <div class="aggregation">
-            <h3>History</h3>
-            <p>Weekly Steps: <span id="weekly-steps">0</span></p>
-            <p>Monthly Steps: <span id="monthly-steps">0</span></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+  <h1>Pedómetro DOGE (Privado)</h1>  <!-- PASSOS -->  <section>
+    <h2>Passos</h2>
+    <p>Total de passos: <strong><span id="steps">0</span></strong></p>
+    <button onclick="addStep()">Adicionar passo</button>
+    <button onclick="syncSteps()">Sincronizar com backend</button>
+  </section>  <hr />  <!-- SALDO -->  <section>
+    <h2>Saldo</h2>
+    <p>Saldo atual: <strong><span id="saldo">0</span></strong> DOGE</p>
+    <button onclick="loadSaldo()">Atualizar saldo</button>
+  </section>  <hr />  <!-- WITHDRAW -->  <section>
+    <h2>Levantamento (Withdraw)</h2>
+    <input type="number" id="amount" placeholder="
